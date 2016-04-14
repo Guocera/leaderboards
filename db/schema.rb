@@ -11,9 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160316114633) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "people", force: :cascade do |t|
+    t.string   "email"
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "employer"
+    t.string   "bio"
+    t.integer  "capital_amount_in_cents"
+    t.integer  "donations_amount_in_cents"
+    t.integer  "donations_count"
+    t.boolean  "is_leaderboardable"
+    t.integer  "signup_type"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
 end
