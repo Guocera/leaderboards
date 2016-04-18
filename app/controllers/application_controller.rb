@@ -17,8 +17,8 @@ class ApplicationController < ActionController::Base
 
   def get_client
     site_path = 'https://branchoutdev.nationbuilder.com'
-    client_id = OAUTH_CONFIG['client_id']
-    client_secret = OAUTH_CONFIG['client_secret']
+    client_id = ENV['CLIENT_ID']
+    client_secret = ENV['CLIENT_SECRET']
     client = OAuth2::Client.new(
       client_id, 
       client_secret,
