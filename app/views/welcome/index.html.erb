@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Leaderboards</title>
+  <title>Branch Out Leaderboards</title>
 </head>
 <body>
-  <h1>Branch Out Leaderboards</h1>
+  <%= render "/layouts/nav" %>
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome</h1>
+      <p>This is a scaffold for the Branch Out Leaderboards.</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href=<%= @oauth_authorize %> role="button">Login</a>
+      </p>
+  
+    </div>
+  </div>
 </body>
 </html>
