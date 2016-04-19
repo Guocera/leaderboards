@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
   end
 
   def get_redirect_url
-    redirect_uri = 'http://localhost:3000/oauth/new'
+    ENV['REDIRECT_URL']
   end
 
 end
