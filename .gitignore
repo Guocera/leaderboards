@@ -1,5 +1,5 @@
 Planning
 config/oauth.yml
 config/secrets.yml
-/log/*
+log/*
 .bash_profile
