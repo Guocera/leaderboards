@@ -12,6 +12,10 @@ class LeaderboardsController < ApplicationController
         @people[i]['capital_amount_in_cents'] += (capital['amount_in_cents'].to_f / 100.0).to_i
       end
     end
+
+    @people.sort_by! do |person|
+      person["capital_amount_in_cents"]
+    end.reverse!
   end
 
 end
