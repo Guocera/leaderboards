@@ -37,7 +37,6 @@ class LeaderboardsController < ApplicationController
 
     @companies = @companies.sort_by { |company, capital| capital }.reverse!
 
-    puts @companies.inspect
   end
 
 end
