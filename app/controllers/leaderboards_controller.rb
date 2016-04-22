@@ -24,7 +24,6 @@ class LeaderboardsController < ApplicationController
         company_name = tags[i]["tag"]
         if company_name.include? "#{program_tag}-"
           @companies[company_name[(program_tag_length + 1)..-1]] += persons_capital
-          puts @companies.inspect
           found_company = true
         end
         i += 1
@@ -35,6 +34,10 @@ class LeaderboardsController < ApplicationController
     @people.sort_by! do |person|
       person["capital_amount_in_cents"]
     end.reverse!
+
+    @companies = @companies.sort_by { |company, capital| capital }.reverse!
+
+    puts @companies.inspect
   end
 
 end
