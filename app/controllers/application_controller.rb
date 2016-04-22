@@ -34,6 +34,10 @@ class ApplicationController < ActionController::Base
     "branchy-program"
   end
 
+  def program_tag_length
+    program_tag.length
+  end
+
   def get_redirect_url
     ENV['REDIRECT_URL']
   end
