@@ -40,7 +40,8 @@ class LeaderboardsController < ApplicationController
   end
 
   def show
-    response = token.get("/api/v1/tags/#{program_tag}-#{params[:id]}/people", headers: { "Accept": "application/json" })
+    @company = params[:id]
+    response = token.get("/api/v1/tags/#{program_tag}-#{@company}/people", headers: { "Accept": "application/json" })
     @people = JSON.parse(response.body)["results"]
 
     @people.each_with_index do |person, i|

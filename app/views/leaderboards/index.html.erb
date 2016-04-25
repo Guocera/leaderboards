@@ -24,7 +24,7 @@
             <tbody>
               <% @companies.each do |company| %>
                 <tr>
-                  <td><%= link_to company[0], leaderboard_path(company[0])  %></td>
+                  <td><%= link_to company[0].camelize, leaderboard_path(company[0])  %></td>
                   <td><%= company[1] %></td>
                 </tr>    
               <% end %>
