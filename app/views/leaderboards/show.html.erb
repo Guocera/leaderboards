@@ -13,29 +13,6 @@
   <div class="container">
     <div class="row">        
       <div class="col-md-12">
-        <h1>Company Board</h1>
-        <div class="table-responsive">                
-          <table id="mytable" class="table table-bordred table-striped table-hover">
-            <thead>
-              <th>Company name</th>
-              <th>NeuroPoints</th>
-            </thead>
-
-            <tbody>
-              <% @companies.each do |company| %>
-                <tr>
-                  <td><%= link_to company[0], leaderboard_path(company[0])  %></td>
-                  <td><%= company[1] %></td>
-                </tr>    
-              <% end %>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">        
-      <div class="col-md-12">
         <h1>People Board</h1>
         <div class="table-responsive">                
           <table id="mytable" class="table table-bordred table-striped table-hover">
