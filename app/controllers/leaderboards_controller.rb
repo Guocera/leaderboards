@@ -39,4 +39,8 @@ class LeaderboardsController < ApplicationController
 
   end
 
+  def show
+    
+  end
+
 end

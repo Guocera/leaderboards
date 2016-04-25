@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resource :oauth, only: [:new, :destroy]
-  resources :leaderboards, only: [:index]
+  resources :leaderboards, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

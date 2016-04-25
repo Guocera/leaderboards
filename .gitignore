@@ -3,4 +3,4 @@ config/oauth.yml
 config/secrets.yml
 log/*
 .bash_profile
-tmp/pids/server.pid
+tmp/*
