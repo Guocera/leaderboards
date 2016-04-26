@@ -1,151 +1,864 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="UTF-8" />
-  <title>Branch Out Leaderboards</title>
-  <link rel="stylesheet" type="text/css" href="/assets/tablet-and-desktop.css">
-</head>
-<body>
-  <%= render "layouts/nav" %>
-  <div class="header-container clearfix ">
-    <div class="width-container clearfix">
-      <!-- _nav.html -->
-      <nav id="menu" role="navigation" style="height: 150px;">
-        <ul id="topnav" class="topnav desktop-nav">    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-          <li class=" drop">
-            <a href="/news">News <i class="icon-angle-down"></i></a>
-            <ul class="sub">
-              <li class="show-parent mobile-visible"><a href="/news">News</a></li>        
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/press_releases">Press Releases</a></li>
-              <li><a href="/media_coverage">Media Coverage</a></li>
-            </ul>
-          </li>    
-    
-          <li class=" drop">
-            <a href="/research">Research <i class="icon-angle-down"></i></a>
-            <ul class="sub">
-              <li class="show-parent mobile-visible"><a href="/research">Research</a></li>
-              <li><a href="/neurocam">NeuroCAM</a></li>
-              <li><a href="/grants">Grant Information</a></li>
-              <li><a href="/srp_members">Scientific Review Panel</a></li>
-            </ul>
-          </li>   
-    
-          <li class="active drop">
-            <a href="/">About <i class="icon-angle-down"></i></a>
-            <ul class="sub">
-              <li class="show-parent mobile-visible"><a href="/">About</a></li>
-              <li><a href="/our_story">Our Story</a></li>
-              <li><a href="/team">Meet the Team</a></li>
-              <li><a href="/mandate">Mandate</a></li>
-              <li><a href="/contact_us">Contact Us</a></li>
-            </ul>
-          </li>
-    
-          <li class=" drop">
-            <a href="/get_involved">Get Involved <i class="icon-angle-down"></i></a>
-            <ul class="sub">
-              <li class="show-parent mobile-visible"><a href="/get_involved">Get Involved</a></li>
-              <li><a href="/join">Become a Branchy</a></li>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/leaflet_newsletter_signup">LEAFlet Newsletter</a></li>
-            </ul>
-          </li>
-        </ul>
-      <div class="button-nav-bar">
-      <a class="button button-nav-bar" href="http://branchout.nationbuilder.com/donate">Donate</a>
-    </div>
+  <title>Our Story - Branch Out Foundation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- because ie8 ignores media queries, we need this -->
+  <!--[if IE 8]>
+    <link rel="stylesheet" href="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/tablet-and-desktop.scss" type="text/css" />
+  <![endif]-->
+
+  <!--[if IE]>
+  <link rel="stylesheet" href="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/ie.scss" type="text/css" />
+  <![endif]-->
+  <!-- Open Graph data -->
+  <meta property="og:image" content="http://d3n8a8pro7vhmx.cloudfront.net/themes/54cbf2a722139315c6000001/attachments/original/1434607281/meta-opengraph-logo-01.jpg" />
+  <meta property="og:site_name" content="Branch Out Foundation" />
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+  <meta name="google-site-verification" content="hIyEiWmVzn2o9VqWsbysNk1kMFvoopSPSr7SKOWvjKI" />
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="0xZ0DDxoJwoVEawEO9KqWRpEWshcqJNnZkV9bJJEnW4=" name="csrf-token" />
+
+  <link rel="canonical" href="http://www.branchoutfoundation.com/our_story" />
+  <meta name="Title" content="Our Story">
+  <meta name="Description" content="Crystal Phillips, an athlete and MS sufferer had been a long time supporter of fundraising initiatives for Multiple Sclerosis. In June of 2010 she recruited Graham to participate on her team for the MS Bike Tour – a team supported by now Branch Out sponsor Tazza Deli &amp; Grill. Team Tazza went on to raise a cumulative ~$250,000 over several years of participating in the tour. ">
+  <meta property="og:title" content="Our Story"/>
+  <meta property="og:url" content="http://www.branchoutfoundation.com/our_story">
+  <meta property="og:description" content="Crystal Phillips, an athlete and MS sufferer had been a long time supporter of fundraising initiatives for Multiple Sclerosis. In June of 2010 she recruited Graham to participate on her team for the MS Bike Tour – a team supported by now Branch Out sponsor Tazza Deli &amp; Grill. Team Tazza went on to raise a cumulative ~$250,000 over several years of participating in the tour. ">
+  <meta property="og:type" content="article">
+  <link rel="image_src" href="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/meta_images/original/branchout-logo.png?1422309089" />
+  <meta property="og:image" content="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/meta_images/original/branchout-logo.png?1422309089" />
+  <meta property="og:site_name" content="Branch Out Foundation"/>
+
+  <script type="text/javascript">
+    var NB = NB || {};
+
+    NB.environment = "production";
+    NB.pageId = "5";
+    NB.Liquid = NB.Liquid || {};
+  </script>
+
+  <script type="text/javascript">
+      //<![CDATA[
+        window._auth_token_name = "authenticity_token";
+        window._auth_token = "0xZ0DDxoJwoVEawEO9KqWRpEWshcqJNnZkV9bJJEnW4=";
+      //]]>
+  </script>
+
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/cupertino/jquery-ui.css" type="text/css" media="all">
+
+  <link rel="icon" type="image/x-icon" href="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/favicon_images/original/branchout-brain.png?1422570244" />
+
+  <script src="http://d3n8a8pro7vhmx.cloudfront.net/assets/liquid/main-863cedd382fc0d968d82cbe2a39ef888.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+
+  <script type="text/javascript">
+    NB.FBAppId = '126739610711965';
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = '//apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-60218246-1']);
+    _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_setCustomVar', 1, 'Parent', 'about', 3]);
+      _gaq.push(['_setCustomVar', 1, 'UGC', 'false', 3]);
+      _gaq.push(['_setCustomVar', 1, 'Page type', 'Basic', 3]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+     var elem = document.createElement('script');
+
+     elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+     elem.async = true;
+     elem.type = "text/javascript";
+     var scpt = document.getElementsByTagName('script')[0];
+     scpt.parentNode.insertBefore(elem, scpt);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+    NB.appConfig.userIsLoggedIn = false;
+  </script>
+
+  <!-- Google Web Fonts -->
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:400italic,700italic,400,700:latin', 'Exo+2:700:latin', 'Lato:900:latin', 'Noticia+Text:400,400italic,700,700italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+ 
+
+  <script type="text/javascript" src="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/jquery.ui.effect.min.js"></script>
+  <script type="text/javascript" src="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/jquery.ui.effect-slide.min.js"></script>
+  <script type="text/javascript" src="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/staged-donations.js"></script>
+  <script type="text/javascript" src="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/collective.js"></script>
   
-    <div class="user-menu">
-      <a class="user-menu-profile-link" href="/login"><i class="icon-user"></i><i class="icon-angle-down"></i><span><strong>Sign In</strong></span></a>
-      <div class="user-menu-sub">
-        <span>Sign in with <a href="/login"><strong>email</strong></a></span> 
-        <br>
-        <span>Haven’t signed in before? <a href="/join"><strong>Learn more</strong></a></span>
-      </div>
-    </div>
-   </nav>
+  <link rel="stylesheet" href="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/theme.scss" type="text/css" />
+  <link rel="stylesheet" href="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/tablet-and-desktop.scss" type="text/css" media="screen and (min-width: 768px)" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+</head>
 
-<a href="#menu" class="menu-link"><i class="icon-menu"></i></a>
-<!-- /_nav.html -->
+<body class="aware-theme v2-theme page-type-basic js">
+  <div id="pattern" class="pattern">
+    <div class="wrap" id="wrap">
+      <div id="body" class="page-pages-show-basic">
+        <div class="header-container clearfix ">
+          <div class="width-container clearfix">     
 
-
-            
-              <div class="site-logo">
-                <header><a href="/"><img src="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/meta_images/original/branchout-logo.png?1422309089"></a></header>
+            <!-- _nav.html -->
+            <nav id="menu" role="navigation">
+              <ul id="topnav" class="topnav desktop-nav">
+                <li class=" drop">
+                  <a href="/news">News <i class="icon-angle-down"></i></a>
+                  <ul class="sub">
+                    <li class="show-parent mobile-visible"><a href="/news">News</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/press_releases">Press Releases</a></li>
+                    <li><a href="/media_coverage">Media Coverage</a></li>
+                  </ul>
+                </li>
+                
+                <li class=" drop">
+                  <a href="/research">Research <i class="icon-angle-down"></i></a>
+                  <ul class="sub">
+                    <li class="show-parent mobile-visible"><a href="/research">Research</a></li>
+                    <li><a href="/neurocam">NeuroCAM</a></li>
+                    <li><a href="/grants">Grant Information</a></li>
+                    <li><a href="/srp_members">Scientific Review Panel</a></li>
+                  </ul>
+                </li>
+                
+                <li class="active drop">
+                  <a href="/">About <i class="icon-angle-down"></i></a>
+                  <ul class="sub">
+                    <li class="show-parent mobile-visible"><a href="/">About</a></li>
+                    <li><a href="/our_story">Our Story</a></li>
+                    <li><a href="/team">Meet the Team</a></li>
+                    <li><a href="/mandate">Mandate</a></li>
+                    <li><a href="/contact_us">Contact Us</a></li>
+                  </ul>
+                </li>
+                
+                <li class=" drop">
+                  <a href="/get_involved">Get Involved <i class="icon-angle-down"></i></a>
+                  <ul class="sub">
+                    <li class="show-parent mobile-visible"><a href="/get_involved">Get Involved</a></li>
+                    <li><a href="/join">Become a Branchy</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/leaflet_newsletter_signup">LEAFlet Newsletter</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="button-nav-bar">
+                <a class="button button-nav-bar" href="http://branchout.nationbuilder.com/donate">Donate</a>
               </div>
+              
+              <div class="user-menu">
+                <a class="user-menu-profile-link" href="/login"><i class="icon-user"></i><i class="icon-angle-down"></i><span><strong>Sign In</strong></span></a>
+                <div class="user-menu-sub">
+                  <span>Sign in with <a href="/login"><strong>email</strong></a></span> 
+                  <br>
+                  <span>Haven’t signed in before? <a href="/join"><strong>Learn more</strong></a></span>
+                </div>
+              </div>  
+            </nav>
+
+            <a href="#menu" class="menu-link"><i class="icon-menu"></i></a>
+            <!-- /_nav.html -->
+            <div class="site-logo">
+              <header><a href="/"><img src="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/meta_images/original/branchout-logo.png?1422309089"></a></header>
+            </div>
+          </div>
+        <!-- .width-container -->
+        </div>
+      <!-- .header-container -->
+      <div class="nav-placeholder"></div>
+      <!-- get jQuery from the google apis -->
+        <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+        <script type="text/javascript" src="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="http://branchout.nationbuilder.com/themes/1/54cbf2a722139315c6000001/0/attachments/14226521001461254185/default/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- START REVOLUTION SLIDER 4.5.0 fullwidth mode -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900' rel='stylesheet' type='text/css'>
+
+        <!-- START REVOLUTION SLIDER 4.5.0 fullwidth mode -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900' rel='stylesheet' type='text/css'>
+
+        <article class="">
+          <!--
+          #################################
+            - THEMEPUNCH BANNER -
+          #################################
+          -->
+          <div class="tp-banner-container">
+            <div class="tp-banner" >
+              <ul>
+                <!-- SLIDE  -->
+                <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1"   data-saveperformance="off"  data-title="Crystal's Story">
+                    <!-- MAIN IMAGE -->
+                  <div class="tp-caption greenbgfull"  data-duration="16000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="center center"></div>
+                  <!-- LAYERS -->
+
+                  <!-- LAYER NR. 1 -->
+                  <div class="tp-caption white_bold_bg_20 sfl tp-resizeme rs-parallaxlevel-10" data-x="716" data-y="273" data-speed="1000" data-start="2600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">From Pro Athlete
+                  </div>
+
+                  <!-- LAYER NR. 2 -->
+                  <div class="tp-caption white_bold_bg_20 sfl tp-resizeme rs-parallaxlevel-10" data-x="766" data-y="308" data-speed="1000" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">To MS Patient
+                  </div>
+
+                  <!-- LAYER NR. 3 -->
+                  <div class="tp-caption white_bold_bg_20 sfl tp-resizeme rs-parallaxlevel-10" data-x="818" data-y="343" data-speed="1000" data-start="3200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">To Branch Out Founder
+                  </div>
+
+
+                  <!-- LAYER NR. 6 -->
+                  <div class="tp-caption white_heavy_60 lft tp-resizeme rs-parallaxlevel-9" data-x="708" data-y="101" data-speed="600" data-start="1100" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Crystal's Story
+                  </div>
+
+                  <!-- LAYER NR. 8 -->
+                  <div class="tp-caption white_thin_34 customin tp-resizeme rs-parallaxlevel-7" data-x="708" data-y="175" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="300" data-start="2300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">How MS Changed Her Life
+                  </div>
+
+                  <!-- LAYER NR. 10 -->
+                  <div class="tp-caption tp-fade fadeout rs-parallaxlevel-0" data-x="78" data-y="83" data-speed="300" data-start="1450" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-autoplay="false" data-autoplayonlyfirsttime="false" style="z-index: 11;"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qUQOJcUnVQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  </div>                 
+                </li>
+              </ul>
+            <div class="tp-bannertimer"></div>  
+            </div>
+          </div>  
+        </article>    
+        <div class="homepage-note note-customer-stats"><a href="/book_crystal">
+          <span class="fa-stack fa-lg" style="margin-right: .5em;">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-bullhorn fa-stack-1x fa-inverse  fa-flip-horizontal"></i>
+          </span>Book Crystal to Speak at Your Next Event</a>
+        </div>
+
+        <script type="text/javascript">
+          jQuery(document).ready(function() {
+            jQuery('.tp-banner').show().revolution(
+            {
+              dottedOverlay:"none",
+              delay:16000,
+              startwidth:1170,
+              startheight:500,
+              hideThumbs:200,
+              
+              thumbWidth:100,
+              thumbHeight:50,
+              thumbAmount:5,
+              
+              navigationType:"bullet",
+              navigationArrows:"solo",
+              navigationStyle:"preview2",
+              
+              touchenabled:"on",
+              onHoverStop:"on",
+              
+              swipe_velocity: 0.7,
+              swipe_min_touches: 1,
+              swipe_max_touches: 1,
+              drag_block_vertical: false,
+                          
+                          parallax:"mouse",
+              parallaxBgFreeze:"off",
+              parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+                          
+              keyboardNavigation:"off",
+              
+              navigationHAlign:"center",
+              navigationVAlign:"bottom",
+              navigationHOffset:0,
+              navigationVOffset:20,
+
+              soloArrowLeftHalign:"left",
+              soloArrowLeftValign:"center",
+              soloArrowLeftHOffset:20,
+              soloArrowLeftVOffset:0,
+
+              soloArrowRightHalign:"right",
+              soloArrowRightValign:"center",
+              soloArrowRightHOffset:20,
+              soloArrowRightVOffset:0,
+                  
+              shadow:0,
+              fullWidth:"on",
+              fullScreen:"off",
+
+              spinner:"spinner4",
+              
+              stopLoop:"off",
+              stopAfterLoops:-1,
+              stopAtSlide:-1,
+
+              shuffle:"off",
+              
+              autoHeight:"off",           
+              forceFullWidth:"off",           
+                          
+                          
+                          
+              hideThumbsOnMobile:"off",
+              hideNavDelayOnMobile:1500,            
+              hideBulletsOnMobile:"off",
+              hideArrowsOnMobile:"off",
+              hideThumbsUnderResolution:0,
+              
+              hideSliderAtLimit:0,
+              hideCaptionAtLimit:0,
+              hideAllCaptionAtLilmit:0,
+              startWithSlide:0,
+              videoJsPath:"rs-plugin/videojs/",
+              fullScreenOffsetContainer: "" 
+            });
+            
+            
+            
+                    
+          }); //ready
+          
+        </script>
+<!-- END REVOLUTION SLIDER -->  
+
+        <div class="main-container" id="middle">
+          <div class="main width-container clearfix">
+            <!-- _columns_2.html -->
+            <div class="twocolumn-container clearfix">
+              <div class="left-column">
+                <div id="flash_container">
+                </div>
+                <div class="content-pages-show-basic">
+                  <!-- _breadcrumbs.html -->
+                  <div class="tablet-visible mobile-visible desktop-visible">
+                    <div id="page-nav" class="page-nav">
+                        <ul class="breadcrumbs">
+                          <li><a href="/">Home</a> <span class="divider">&raquo;</span></li>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <h2 class="headline">Our Story</h2>
+                  <div id="content">
+                    <div id="intro" class="intro">
+                      <div class="text-content">
+                        <p>Like many great ideas, the Branch Out Neurological Foundation started with a chat between friends over drinks. But Crystal Phillips and Graham Daw had no intention of leaving the idea at the bottom of a glass. The two young philanthropists founded the wonderful charity in November 2010 and haven’t looked back since.</p>
+                        <p>Crystal Phillips, an athlete and MS sufferer had been a long time supporter of fundraising initiatives for Multiple Sclerosis. In June of 2010 she recruited Graham to participate on her team for the MS Bike Tour. Her team went on to raise a cumulative ~$250,000 over several years of participating in the tour. </p>
+                        <p>Graham and Crystal, along with several friends went on to participate in the Highline 100 Bicycle Tour in Fernie, BC that summer.</p>
+                        <p>Inspired by the selfless crew of the Highline 100, they decided that they would begin planning for their own bike tour the following year (at this point the date, location, and specific cause were yet to be determined, nor was there any mention of founding a charity).</p>
+                        <p>As the planning went on over the next few months, Graham found out that his father had been diagnosed with Parkinson’s disease, another degenerative neurological condition. Thus began the discussion to broaden the focus of the funds raised at the yet to be held (or named) Branch Out Bike Tour. </p>
+                        <p>After several months of planning and meetings, and with the help of several volunteers along the way, the Branch Out Neurological Foundation was incorporated on November 23, 2010 and two years later were registered with the Canada Revenue Agency as a Registered Charitable Organization, effective December 1, 2012.</p>
+                        <p>In just their first year, the Branch Out Foundation raised over $45,000 and in their 5th year, they hit their first Millionth dollar raised!! "We've created a monster!" as Crystal would say, with a smile from ear to ear.</p>
+                        <p> </p>
+                        <p><img src="https://d3n8a8pro7vhmx.cloudfront.net/branchout/pages/5/attachments/original/1430426637/BONF_Post_Card-1.png?1430426637" alt="BONF_Post_Card-1.png" /></p>
+                      </div>
+                    </div>
+
+                    <div class="like-page">
+                      <strong>Do you like this page?</strong>
+                      <!-- _like_page.html -->
+                      <div class="sharetable padtopless clearfix">
+                        <div class="facebook-cell">
+                          
+                          <div class="desktop-visible">
+                            <fb:like href="http://www.branchoutfoundation.com/our_story" show_faces="false" width="300" colorscheme="light" send="true" action="like"></fb:like>
+                          </div>
+                          <div class="mobile-visible">
+                            <fb:like href="http://www.branchoutfoundation.com/our_story" show_faces="false" width="245" colorscheme="light" send="false" action="like"></fb:like>
+                          </div>
+                          
+                        </div>
+                        <div class="twitter-cell">
+                          
+                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-text="Our Story" data-via="BranchOutNF">Tweet</a>
+                          
+                        </div>
+                        <div class="gplus-cell"><g:plusone count="false" size="medium"></g:plusone></div>
+                      </div>
+                      <!-- /_like_page.html -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .left_column -->
+
+              <div class="right-column">
+                <ul class="supporter-nav block">
+                  <li><a href="/login"><i class="icon-user"></i> Sign in</a></li>
+                </ul>
+                <div>
+                  <form id="newsletter_for_sidebar_page_new_signup_form" class="ajaxForm signup_form" method="POST" action="/forms/signups" enctype="multipart/form-data"><input name="authenticity_token" type="hidden" value="0xZ0DDxoJwoVEawEO9KqWRpEWshcqJNnZkV9bJJEnW4="/><input name="page_id" type="hidden" value="149"/><input name="return_to" type="hidden" value="http://www.branchoutfoundation.com/newsletter_for_sidebar"/><div class="email_address_form" style="display:none;"><p><label for="email_address">Optional email code</label><br/><input name="email_address" type="text" class="text" id="email_address" autocomplete="off"/></p></div>
+
+                  <div class="form-errors"></div>
+
+     <h3>Join Newsletter <a href="leaflet_newsletter_signup"> <i class="fa fa-info-circle" style="padding-left:10px"></i></a></h3> 
+     
+ <div><label for="signup_email" style="padding-right: 30px;"></label> <input required="" class="text" id="signup_email" name="signup[email]" placeholder="Email address" type="email" />
+     </div>
+
+
+<input class="button button-alt" type="submit" name="commit" value="Sign Up" />
+      <div class="form-submit"></div>
+     <div class="voffset6"></div>
+      </form>
+</div> 
+    
+    
+    
+
+    <div class="supporter-nav-buttons block">
+      
+      <a class="button supporter-nav-button" href="http://branchout.nationbuilder.com/donate">Donate</a>
+      
+
+      
+      <a class="button supporter-nav-button" href="http://www.branchoutfoundation.com/join">Join</a>
+      
+
+      
+      <a class="button supporter-nav-button" href="http://www.branchoutfoundation.com/spread_the_word">Spread the word</a>
+      
+    </div>
+     <div class="voffset6"></div>
+
+    
+
+    
+          
+
+
+  </div>
+  <!-- .right-column -->
+</div> <!-- .twocolumn_container -->
+
+<!-- /_columns_2.html -->
+
             
 
+            
+
+
+ 
+
+            
           </div>
-          <!-- .width-container -->
+          <!-- .main -->
+          
+         
+          
+        </div>
+        <!-- .main-container -->
+
+  
+        
+        <div class="width-container">
+          <footer class="clearfix">
+            
+                  
+            
+
+<!-- _partial_ate_settings.html -->
+
+
+
+<!-- /_partial_ate_settings.html -->
+
+            <div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 126739610711965,
+      channelUrl : "//branchout.nationbuilder.com/channel.html",
+      status     : true,
+      version    : "v2.3",
+      cookie     : true,
+      xfbml      : true
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.async = true;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<script src="//d3n8a8pro7vhmx.cloudfront.net/assets/liquid-d4f2b2e96287b5d6bcbdde4a0f4c8c85.js" type="text/javascript"></script>
+<script src="//d3n8a8pro7vhmx.cloudfront.net/assets/tinymce-jquery-b16bb09336f0e7f04e5e1d9228b0b6e8.js" type="text/javascript"></script>
+
+    <iframe src="//www.branchoutfoundation.com/session_pair_phase_1" width="1" height="1" style="display: none;"></iframe>
+
+
+  <script type="text/javascript">
+  _qevents.push(
+    { qacct:"p-5ftmjaPECGTTU" }
+    );
+  </script>
+
+  <noscript>
+  <div style="display: none;"><img src="//pixel.quantserve.com/pixel?a.1=p-5ftmjaPECGTTU" height="1" width="1" alt="Quantcast"/></div>
+  </noscript>
+
+
+            
+            
+
+            <div class="row-fluid footer-activities">
+
+              <div class="span8 footer-left desktop-visible">
+
+                
+                
+                <h5>Powered by people like you</h5>
+           
+                <div class="desktop-visible" id="no-href">
+                   
+                  <a data-toggle="tooltip" title="Renee Melville">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/399746934.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Battle of Mind">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/2650353325.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Sylvia Hall">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/16724211.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Gretchen Srivastava">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1649399424.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="sandisiwe sisilana">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/705165498.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Peter George Dip.CBT">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/3064009798.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Danielle Torrie">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1278306354.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Hdsa">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/36398812.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="leslie sawatzky">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/229281438.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Chris King">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/425268709.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Lisa Mercer">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/3364613200.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Fitness Daily">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/2184433535.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Dee Brock">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1525193149.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                   
+                  <a data-toggle="tooltip" title="Jocelyn Wudel">
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/80380780.jpg" width="48" height="48" style="padding-top:4px" />
+                  </a>       
+                  
+                </div>
+
+                <div class="mobile-visible" id="no-href">
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/399746934.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/2650353325.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/16724211.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1649399424.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/705165498.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/3064009798.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1278306354.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/36398812.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/229281438.jpg" width="24" height="24" style="padding-top:4px" />
+                   
+                    <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/425268709.jpg" width="24" height="24" style="padding-top:4px" />
+                  
+                </div>
+
+                
+
+              </div>
+
+              <div class="span4 footer-right footer-social-links">
+                <a href="https://www.facebook.com/BranchOutFoundation/"><i class="icon-facebook-squared"></i></a>
+                <a href="http://twitter.com/BranchOutNF"><i class="icon-twitter-squared"></i></a>
+                
+              </div>
+
+            </div>
+
+            <div class="footer-content">
+<div class="footer-container">
+              <div class="width-container">
+        
+
+
+        <div class="row-fluid">
         </div>
 
+        <div class="row-fluid footer-links desktop-visible">
+            <div class="span2">
+              
+              <h4><a href="/">About</a></h4>
+
+                <ul>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="/team">Meet the Team</a>
+                    </li>
+
+                    <li>
+                        <a href="/our_story">Our Story</a>
+                    </li>
+
+                    <li>
+                        <a href="/mandate">Mandate</a>
+                    </li>
+                            <li>
+                        <a href="/downloads">Downloads</a>
+                    </li>
+
+                    <li class="last-child">
+                        <a href="/contact_us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="span2">
+                <h4><a href="/join">Get Involved</a></h4>
+
+                <ul>
+                    <li>
+                        <a href="/join">Join Us</a>
+                    </li>
+                   
+                    <li>
+                        <a href="/events">Events</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/donate">Donate</a>
+                    </li>
+                     <li>
+                        <a href="/monthly_membership_signup">Monthly Donation</a>
+                    </li>
 
 
+                    <li>
+                        <a href="/volunteer">Volunteer</a>
+                    </li>
+                
 
+                    <li class="last-child">
+                    <a href="/spread_the_word">Spread the Word</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="span2">
+                <h4><a href="/research">Research</a></h4>
 
+                <ul>
+                   <li>
+                        <a href="/funded_research">Funded Projects</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/neurocam">NeuroCAM</a>
+                    </li>
 
+                    <li>
+                        <a href="/grants">Grant Information</a>
+                    </li>
 
+                    <li>
+                        <a href="/grant_application">Apply for Grant</a>
+                    </li>
 
+                     <li class="last-child">
+                        <a href="/reference_survey">Submit Reference Survey</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="span2">
+                <h4><a>Media</a></h4>
 
+                <ul>
+                <li>
+            <a href="/blog">Blog</a>
+                   </li>  
+                     <li>
+            <a href="/media_coverage">Media Coverage</a>
+                   </li> 
+                   <li>
+            <a href="/press_releases">Press Releases</a>
+                   </li> 
+               <li>
+            <a href="https://twitter.com/branchoutnf">Twitter</a>
+                   </li>    
+                      <li><a href="https://www.facebook.com/BranchOutFoundation">Facebook</a>
+                    </li>
 
+                    <li>
+                        <a href="https://www.linkedin.com/company/branch-out-neurological-foundation">Linkedin</a>
+                        </li>
 
+                    <li class="last-child"><a href="http://instagram.com/branchoutnf">Instagram</a>
+                    </li>
+    
 
-  <p id="notice"><%= notice %></p>
+                </ul>
+            </div>
 
-  <div class="container">
-    <div class="row">        
-      <div class="col-md-12">
-        <h1>Company Board</h1>
-        <div class="table-responsive">                
-          <table id="mytable" class="table table-bordred table-striped table-hover">
-            <thead>
-              <th>Company name</th>
-              <th>NeuroPoints</th>
-            </thead>
+            <div class="offset1 span3">
+                <a href="/"><img alt="BrachOutNF" border="0" height="47"
+                src="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/meta_images/original/branchout-logo.png?1422309089" title="BranchOut" width="176"></a>
+                <ul style="margin-left: 42px;">
+                    <li>
+                        <a href="https://www.google.com/maps/dir/Current+Location/119+14+St+NW,+Calgary,+AB+T2N+1Z6">400-119 14 Street NW<br>
+                        Calgary, AB<br>
+                      T2N 1Z6</a>
+                    </li>
 
-            <tbody>
-              <% @companies.each do |company| %>
-                <tr>
-                  <td><%= link_to company[0].gsub("-", " ").titleize, leaderboard_path(company[0])  %></td>
-                  <td><%= company[1] %></td>
-                </tr>    
-              <% end %>
-            </tbody>
-          </table>
+                    <li>403.200.0494</li>
+
+                    <li>
+                      <a href="mailto:crystal@branchoutfoundation.com" title=
+                        "">crystal@branchoutfoundation.com</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-      </div>
+
+    
     </div>
+              
+              
 
-    <div class="row">        
-      <div class="col-md-12">
-        <h1>People Board</h1>
-        <div class="table-responsive">                
-          <table id="mytable" class="table table-bordred table-striped table-hover">
-            <thead>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>NeuroPoints</th>
-            </thead>
+              <div class="row-fluid">
 
-            <tbody>
-              <% @people.each do |person| %>
-                <tr>
-                  <td><%= person['first_name'] %></td>
-                  <td><%= person['last_name'] %></td>
-                  <td><%= person['capital_amount_in_cents'] %></td>
-                </tr>    
-              <% end %>
-            </tbody>
-          </table>
+                <div class="span8 footer-left">
+                  
+                  
+                  
+                  You're not logged in! <a href="/login">Sign In</a> or <a href="/login">Sign Up</a>.</br>
+                    <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves.
+                       You can style it or move it in different ways, but please leave it in the footer. -->
+                  Created by <a href="http://www.myriadfront.com">Myriad Front</a> with <a href="http://nationbuilder.com/">NationBuilder</a>
+                  
+                </div>
+
+                <div class="span4 footer-right">
+
+                  
+                  <div class="footer-social-button">
+                    <a href="http://twitter.com/BranchOutNF" class="twitter-follow-button" data-show-count="false">Follow @BranchOutNF on Twitter</a>
+                  </div>
+                  
+
+                  
+                  <div class="footer-social-button"><fb:like style="height: 20px; vertical-align: top;" href="https://www.facebook.com/BranchOutFoundation/" colorscheme="dark" width="292"></fb:like></div>
+                  
+
+                </div>
+
+              </div>
+
+            </div>
+   
+          </footer>
         </div>
+        <!-- .width-container -->
+       </div>
       </div>
+      <!-- #body -->
     </div>
+    <!-- #wrap -->
   </div>
+  <!-- #pattern -->
+
+
 </body>
 </html>
-
