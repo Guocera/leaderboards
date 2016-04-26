@@ -3,10 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <title>Branch Out Leaderboards</title>
-  <link rel="stylesheet" type="text/css" href="/assets/landing.css">
+  <link rel="stylesheet" type="text/css" href="/assets/tablet-and-desktop.css">
 </head>
 <body>
   <%= render "layouts/nav" %>
+  <div class="header-container clearfix ">
+    <div class="width-container clearfix">
+      <!-- _nav.html -->
+      <nav id="menu" role="navigation" style="height: 150px;">
+        <ul id="topnav" class="topnav desktop-nav">    
+
+          <li class=" drop">
+            <a href="/news">News <i class="icon-angle-down"></i></a>
+            <ul class="sub">
+              <li class="show-parent mobile-visible"><a href="/news">News</a></li>        
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/press_releases">Press Releases</a></li>
+              <li><a href="/media_coverage">Media Coverage</a></li>
+            </ul>
+          </li>    
+    
+          <li class=" drop">
+            <a href="/research">Research <i class="icon-angle-down"></i></a>
+            <ul class="sub">
+              <li class="show-parent mobile-visible"><a href="/research">Research</a></li>
+              <li><a href="/neurocam">NeuroCAM</a></li>
+              <li><a href="/grants">Grant Information</a></li>
+              <li><a href="/srp_members">Scientific Review Panel</a></li>
+            </ul>
+          </li>   
+    
+          <li class="active drop">
+            <a href="/">About <i class="icon-angle-down"></i></a>
+            <ul class="sub">
+              <li class="show-parent mobile-visible"><a href="/">About</a></li>
+              <li><a href="/our_story">Our Story</a></li>
+              <li><a href="/team">Meet the Team</a></li>
+              <li><a href="/mandate">Mandate</a></li>
+              <li><a href="/contact_us">Contact Us</a></li>
+            </ul>
+          </li>
+    
+          <li class=" drop">
+            <a href="/get_involved">Get Involved <i class="icon-angle-down"></i></a>
+            <ul class="sub">
+              <li class="show-parent mobile-visible"><a href="/get_involved">Get Involved</a></li>
+              <li><a href="/join">Become a Branchy</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/leaflet_newsletter_signup">LEAFlet Newsletter</a></li>
+            </ul>
+          </li>
+        </ul>
+      <div class="button-nav-bar">
+      <a class="button button-nav-bar" href="http://branchout.nationbuilder.com/donate">Donate</a>
+    </div>
+  
+    <div class="user-menu">
+      <a class="user-menu-profile-link" href="/login"><i class="icon-user"></i><i class="icon-angle-down"></i><span><strong>Sign In</strong></span></a>
+      <div class="user-menu-sub">
+        <span>Sign in with <a href="/login"><strong>email</strong></a></span> 
+        <br>
+        <span>Haven’t signed in before? <a href="/join"><strong>Learn more</strong></a></span>
+      </div>
+    </div>
+   </nav>
+
+<a href="#menu" class="menu-link"><i class="icon-menu"></i></a>
+<!-- /_nav.html -->
+
+
+            
+              <div class="site-logo">
+                <header><a href="/"><img src="http://d3n8a8pro7vhmx.cloudfront.net/branchout/sites/1/meta_images/original/branchout-logo.png?1422309089"></a></header>
+              </div>
+            
+
+          </div>
+          <!-- .width-container -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <p id="notice"><%= notice %></p>
 
